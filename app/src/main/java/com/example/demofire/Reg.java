@@ -67,7 +67,7 @@ public class Reg extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(), "Registration successful!", Toast.LENGTH_LONG).show();
                             progressBar.setVisibility(View.GONE);
 
-                            Intent intent = new Intent(Reg.this, Login.class);
+                            Intent intent = new Intent(Reg .this, Login.class);
                             startActivity(intent);
                         } else {
                             Toast.makeText(getApplicationContext(), "Registration failed! Please try again later", Toast.LENGTH_LONG).show();

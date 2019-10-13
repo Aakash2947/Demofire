@@ -1,5 +1,6 @@
 package com.example.demofire;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -19,7 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class Login extends AppCompatActivity {
 
     private EditText emailTV, passwordTV;
-    private Button loginBtn;
+    private Button loginBtn,regBtn;
     private ProgressBar progressBar;
 
     private FirebaseAuth mAuth;
@@ -38,6 +39,15 @@ public class Login extends AppCompatActivity {
                 loginUserAccount();
             }
         });
+        regBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Login.this,Reg.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 
     private void loginUserAccount() {
@@ -62,7 +72,16 @@ public class Login extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             Toast.makeText(getApplicationContext(), "Login successful!", Toast.LENGTH_LONG).show();
+                            loginBtn.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    loginUserAccount();
+                                    Intent intent=new Intent(Login.this,Homepage.class);
+                                    startActivity(intent);
+                                }
+                            });
                             progressBar.setVisibility(View.GONE);
+
 
 
                         }
@@ -72,6 +91,13 @@ public class Login extends AppCompatActivity {
                         }
                     }
                 });
+
+
+
+
+
+
+
     }
 
     private void initializeUI() {
@@ -79,6 +105,7 @@ public class Login extends AppCompatActivity {
         passwordTV = findViewById(R.id.password);
 
         loginBtn = findViewById(R.id.login);
+        regBtn=findViewById(R.id.notregister);
         progressBar = findViewById(R.id.progressBar);
     }
 }

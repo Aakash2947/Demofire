@@ -32,6 +32,11 @@
         android:layout_height="wrap_content"
         android:text="Login" />
 
+    <Button
+        android:id="@+id/notregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Don't have account register as a new user" />
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="wrap_content"
