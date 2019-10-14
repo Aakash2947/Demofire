@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Homepage"
     android:paddingTop="5dp"
-    android:background="#daedba">
+    android:background="#a4ffc9">
 
 
     <ImageButton
