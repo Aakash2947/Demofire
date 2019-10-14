@@ -7,17 +7,22 @@
     android:gravity="center_vertical"
     android:orientation="vertical"
     android:padding="16dp"
+    android:background="#92d0cd"
     tools:context=".Reg">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Register new account" />
+        android:textColor="#ed33a8"
+        android:text="Register new account"
+        android:layout_marginLeft="50dp"
+        android:textSize="30dp" />
 
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
         android:hint="Email" />
 
     <EditText

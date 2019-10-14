@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Demofire</string>
+    <string name="account_login">Account login</string>
 </resources>
