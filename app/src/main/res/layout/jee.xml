@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2e2db">
+
+    <TextView
+        android:id="@+id/txt_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_your_subject"
+        android:layout_centerHorizontal="true"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="#000" />
+
+    <ImageButton
+        android:id="@+id/math_jee"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/txt_sub"
+        android:layout_marginTop="2dp"
+        android:adjustViewBounds="true"
+        android:background=""
+        android:clickable="true"
+        android:contentDescription="@string/common_google_play_services_enable_button"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/jee_math"
+        android:focusable="true" />
+
+    <ImageButton
+        android:id="@+id/phy_jee"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:contentDescription="@string/common_google_play_services_enable_button"
+        android:layout_below="@+id/math_jee"
+        android:adjustViewBounds="true"
+        android:background="#fffede"
+        android:scaleType="fitCenter"
+        android:src="@drawable/neet_phy"
+
+        android:focusable="true" />
+
+    <ImageButton
+        android:id="@+id/bio_jee"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/phy_jee"
+        android:clickable="true"
+        android:contentDescription="@string/common_google_play_services_enable_button"
+        android:adjustViewBounds="true"
+        android:background="#fffede"
+        android:scaleType="fitCenter"
+        android:src="@drawable/neet_chem"
+        android:layout_centerHorizontal="true"
+
+        android:focusable="true" />
+
+
+</RelativeLayout>

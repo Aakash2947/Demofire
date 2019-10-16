@@ -17,9 +17,7 @@ import android.widget.TextView;
 
 public class Listviewjee extends AppCompatActivity {
 
-    ListView listview;
-    String subjectList[] = new String[]{ "Chemistry", "Physics","Biology"};
-    int image[]={R.drawable.chemistry,R.drawable.physics,R.drawable.biology};
+
 
 
 
@@ -27,8 +25,6 @@ public class Listviewjee extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        listview=(ListView)findViewById(R.id.listviewjee);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, R.layout.activity_listviewjee, R.id.textView, subjectList);
-        listview.setAdapter(arrayAdapter);
+
     }
 }

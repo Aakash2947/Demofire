@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Demofire</string>
     <string name="account_login">Account login</string>
+    <string name="register_new_account">Register new account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="select_your_subject">Select your subject</string>
+    <string name="todo">TODO</string>
+    <string name="start_test">start test</string>
 </resources>
